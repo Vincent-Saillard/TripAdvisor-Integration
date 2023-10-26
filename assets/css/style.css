@@ -222,6 +222,36 @@ h1 span {
 .blockpics > div:first-child {
   height: 100%;
   width: 630px;
+  position: relative;
+}
+
+.blockpics .allpics {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-family: TS-Med, sans-serif;
+  font-size: 12px;
+}
+
+.blockpics .allpics:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.blockpics .allpics span {
+  margin: 5px;
+}
+
+.blockpics .allpics i {
+  margin-left: 5px;
 }
 
 .blockpics > div:last-child {
