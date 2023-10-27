@@ -209,7 +209,7 @@ h1 span {
 .blockpics {
   height: 430px;
   display: flex;
-  gap: 2px;
+  gap: 1px;
 }
 
 .blockpics img {
@@ -262,6 +262,7 @@ h1 span {
 
 .blockpics > div:last-child > div {
   height: calc((100% - 1px) / 2);
+  margin-bottom: 1px;
 }
 
 .blockpics img:hover {
