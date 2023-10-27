@@ -169,19 +169,20 @@ h1 span {
   margin-top: 30px;
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 15px;
-  height: 90px;
+  /* height: 90px; */
 }
 
 .navigation > div {
-  flex: 1;
+  /* flex: 1; */
+  width: calc((100% - 75px) / 6);
   border: 1px solid black;
   border-radius: 15px;
   padding: 15px;
   font-size: 16px;
   font-family: TS-Med, sans-serif;
-  line-height: 120%;
+  /* line-height: 120%; */
   display: flex;
   justify-content: space-between;
 }
@@ -570,8 +571,8 @@ footer a:hover {
 
 @media (max-width: 1184px) {
   /* header {
-    /* background-color: aquamarine; */
-  /* } */
+    background-color: aquamarine;
+  } */
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -579,27 +580,31 @@ footer a:hover {
   #informations p {
     margin-right: 80px;
   }
-}
+  .navigation {
+    /* height: 195px; */
+    flex-wrap: wrap;
+    /* flex-shrink: 0; */
+    /* align-items: start; */
+  }
 
+  .navigation > div {
+    min-width: 175px;
+    /* min-height: 70px; */
+
+    width: calc((100% - 30px) / 3);
+  }
+}
 @media (max-width: 1024px) {
   /* header {
-    /* background-color: lightpink; */
-  /* } */
+    background-color: lightpink;
+  } */
   header .container > div:first-of-type i {
     display: inline;
   }
   .menu > div {
     display: none;
   }
-  .navigation {
-    height: 195px;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    align-items: start;
-  }
-  .navigation > div {
-    height: 90px;
-  }
+
   .blockpics {
     height: 300px;
   }
@@ -613,8 +618,20 @@ footer a:hover {
 }
 @media (max-width: 768px) {
   /* header {
-    /* background-color: lightgoldenrodyellow; */
-  /* } */
+    background-color: lightgoldenrodyellow;
+  } */
+  .navigation {
+    flex-wrap: nowrap;
+    overflow: scroll hidden;
+  }
+  ::-webkit-scrollbar {
+    display: hidden;
+  }
+  .navigation > div {
+    width: fit-content;
+    flex-shrink: 0;
+  }
+
   header img:first-of-type {
     display: inline;
   }
@@ -627,6 +644,11 @@ footer a:hover {
   h1 {
     font-size: 32px;
   }
+
+  .blockpics {
+    padding: 0;
+  }
+
   .blockpics > div:last-child {
     display: none;
   }
