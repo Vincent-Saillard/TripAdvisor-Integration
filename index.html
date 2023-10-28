@@ -10,6 +10,8 @@
       src="https://kit.fontawesome.com/6c8bd1d24d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 
     <title>TripAdvisor</title>
   </head>
@@ -37,7 +39,9 @@
             <i class="fa-regular fa-heart fa-lg"></i>
             <p>Favoris</p>
           </div>
-          <button class="connect" type="button">Connectez-vous</button>
+          <button class="connect" id="connect" type="button">
+            Connectez-vous
+          </button>
         </div>
       </div>
     </header>
@@ -1457,5 +1461,36 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="form-container">
+        <div>
+          <i class="fa-solid fa-xmark" id="close"></i>
+          <p>Formulaire de contact</p>
+          <form id="contact-form">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Prénom"
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Nom"
+            />
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              cols="50"
+              placeholder="Écrivez ici votre message..."
+            ></textarea>
+            <button>Envoyer le formulaire</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
