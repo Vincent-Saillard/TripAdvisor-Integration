@@ -21,6 +21,26 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("body").classList.remove("fixed");
   });
 
+  // Au clic sur le Burger Menu
+
+  document.querySelector("#burgerMenu").addEventListener("click", () => {
+    console.log("click burger menu");
+    //cibler le menu et changer son display monde en flex, empêcher le scroll
+    document.querySelector(".burgerContent").classList.remove("none");
+    document.querySelector(".burgerContent").classList.add("flex");
+    document.querySelector("body").classList.add("fixed");
+  });
+
+  // Au clic sur la croix du burger menu
+
+  document.querySelector("#close2").addEventListener("click", () => {
+    console.log("click close burger menu");
+    // cibler la modal et changer le display mode en none, activer le scroll
+    document.querySelector(".burgerContent").classList.remove("flex");
+    document.querySelector(".burgerContent").classList.add("none");
+    document.querySelector("body").classList.remove("fixed");
+  });
+
   // A la soumission du formulaire
 
   document.querySelector("form").addEventListener("submit", async (event) => {
