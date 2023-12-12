@@ -16,15 +16,15 @@ All responsive.
 
 * Main page on large screen
 
-
+<img width="400" alt="image" src="https://github.com/Vincent-Saillard/TripAdvisor-Integration/assets/144067650/75a00db1-f7ae-4595-84e2-452772091906">
 
 * Main page on smaller screen
 
-
+<img width="400" alt="image" src="https://github.com/Vincent-Saillard/TripAdvisor-Integration/assets/144067650/a1bcc468-03eb-4475-bcfe-a44d6018329f">
 
 * Modal displayed
 
-<img width="629" alt="image" src="https://github.com/Vincent-Saillard/TripAdvisor-Integration/assets/144067650/675cfa7f-6d03-484d-b8fd-06466baafded">
+<img width="400" alt="image" src="https://github.com/Vincent-Saillard/TripAdvisor-Integration/assets/144067650/675cfa7f-6d03-484d-b8fd-06466baafded">
 
 ---
 
